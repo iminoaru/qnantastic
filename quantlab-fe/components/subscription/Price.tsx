@@ -65,7 +65,7 @@ export default function Price() {
 									);
 								})}
 							</div>
-							<Checkout priceId={price.priceId} />
+							<Checkout priceId={price.priceId || ""} />
 						</div>
 					);
 				})}

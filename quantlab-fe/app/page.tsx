@@ -8,9 +8,10 @@ import { WobbleCards } from '@/components/WobbleCards';
 import { InfiniteCards } from '@/components/InfiniteCards';
 import Footer from '@/components/Footer';
 import Price from '@/components/subscription/Price';
+import { Session } from '@supabase/supabase-js';
 
 export default function Home() {
-  const [session, setSession] = useState(null);
+  const [session, setSession] = useState<Session | null>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {

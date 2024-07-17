@@ -6,7 +6,7 @@ import rehypeKatex from 'rehype-katex';
 import remarkMath from 'remark-math';
 import 'katex/dist/katex.min.css'; // Import the KaTeX CSS
 
-const MarkdownLaTeXRenderer = ({ content }) => {
+const MarkdownLaTeXRenderer = ({ content }: { content: string }) => {
     return (
         <ReactMarkdown
             remarkPlugins={[remarkMath]}
